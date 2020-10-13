@@ -46,20 +46,26 @@ h1{
   text-align: center;
   background-color: grey;
 }
-.menu li:hover{
-  background-color: rgba(255, 255, 255, 0.3);
-}
+
 .menu li{
   display: inline-block;
   list-style: none;
   padding: 10px;
+}
+
+.menu li a{
+  text-decoration: none;
   text-transform: uppercase;
-  font-style: normal;
+  color: white;
+}
+
+.menu li:hover{
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 main{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 main::after{
@@ -67,7 +73,6 @@ main::after{
   display: table;
   clear: both;
 }
-
 .fl{
   float: left;
 }
@@ -78,23 +83,29 @@ main::after{
 .recap{
   width: 20%;
   height: 300px;
-  font-size: 16px;
-  color: green;
   background-color: white;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .organic_list li{
   list-style: none;
   margin: 5px;
+  padding-top: 10px;
+}
+
+.boxcenter{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .article{
-  width: 50%;
+  width: 60%;
   height: 200px;
-  margin-left: 30px;
-  background-color: white;
-  border-radius: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
 }
 
 .list{
@@ -107,6 +118,7 @@ main::after{
   margin-bottom: 20px;
   background-color: white;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .devname{
@@ -119,5 +131,13 @@ main::after{
 .foot{
   background-color: white;
   width: 100%;
-  height: 20vh;
+  height: 100px;
+  position: relative;
+}
+
+.foot i{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
