@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: auto;
+  width: 60vw;
+  background-image: url('../img/pattern.png');
+  background-repeat: repeat;
+}
+
+.banner{
+  height: 30vh;
+  width: 100%;
+  border: 5px solid white;
+  margin-top: 10px;
+  background-image: url('../img/bosco.jpg');
+  background-size: cover;
+  position: relative;
+
+}
+
+h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  border: 3px solid white;
+  padding: 5px;
+}
+
+.subtitle{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu{
+  background-color: grey;
+  height: 5vh;
+  width: 100%;
+}
+
+ul li{
+  display: inline-block;
+}
+
+main::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.blog_recap{
+  border: 2px solid red;
+  background-color: white;
+  width: 20%;
+  height: 200px;
+}
+
+.blog_list{
+  border: 2px solid black;
+  background-color: lightgreen;
+  width: 20%;
+  height: 600px;
+}
+
+.center{
+  border: 2px solid white;
+  background-color: lightblue;
+  width: 50%;
+  height: 100px;
+}
+
+.foot{
+  border: 2px solid black;
+  background-color: grey;
+  width: 100%;
+  height: 20vh;
+}
